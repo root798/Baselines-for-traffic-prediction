@@ -1,0 +1,4 @@
+buglog
+1. Last update of adjacency matrix with real adjacency matrix from data( instead of setting a shelhold by oneself), because it should not be optimized as hyperparameters and could give faulse results that has overstate performance. 
+2. For the ASTGCN model and the MSTGCN model, the time slice should be treated without weight, rather than giving weights to month, day and hour respectively. The latter will improve the performance of the model, but it is different from the input information of the LLM model and cannot produce a comparison effect.
+3.The calculation methods of MAPE and RMSE are readjured to reduce the influence of the minimum value and the excessive value
